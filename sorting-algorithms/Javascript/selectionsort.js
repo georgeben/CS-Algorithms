@@ -10,7 +10,7 @@ function selectionSort(arr){
             console.log(`Minimum index ${minIndex}`)
             if (arr[j] < arr[minIndex]){
                 console.log(`New minimum element: ${arr[j]} at index ${j}`)
-                //Let the minIndex be j since j is less than minIndex
+                //Let the minIndex be j since the element at j is less than minIndex
                 minIndex = j;
             }
 
@@ -28,7 +28,9 @@ function selectionSort(arr){
     return arr
 }
 
-let arr = [5,4,3,2,1]
+let arr = [6,5,4,3,2,1]
 console.log(`Before sorting: ${arr}`)
+// console.time("start")
 let sortedArr = selectionSort(arr);
+// console.timeEnd("start")
 console.log(`After sorting: ${sortedArr}`)
