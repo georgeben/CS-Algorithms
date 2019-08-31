@@ -31,7 +31,7 @@ function bubbleSort(arr){
     return arr
 }
 
-let myArr = [3,1,2,4,5]
+let myArr = [5,4,3,2,1]
 console.log(`Before sort: ${myArr}`)
 let sortedArr = bubbleSort(myArr);
 
