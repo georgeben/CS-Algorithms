@@ -1,9 +1,10 @@
 def quicksort(arr):
     if(len(arr) <= 1):
         return arr
-    pivot = arr[0]
-    less = [i for i in arr[1:] if(i < pivot)] #sub array of elements less than the pivot
-    greater = [i for i in arr[1:] if(i > pivot)]  #sub array of elements greater than the pivot
+    mid = len(arr)//2
+    pivot = arr[mid]
+    less = [i for i in arr if(i < pivot)] #sub array of elements less than the pivot
+    greater = [i for i in arr if(i > pivot)]  #sub array of elements greater than the pivot
 
     return quicksort(less) + [pivot] + quicksort(greater)
 
